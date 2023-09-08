@@ -7,6 +7,6 @@ module.exports = {
   plugins: [
     require("tailwindcss"), // Import tailwindcss
     require("daisyui"),
-    require("flowbite/plugin"),
+    // require("flowbite/plugin"),
   ],
 };

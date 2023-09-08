@@ -14,21 +14,24 @@ const Home = () =>
     <Rootlayout>
       <div className=" bg-stone-200">
         <HomeNav />
-        <div className=" grid grid-cols-5 bg-white">
-          <div className="">
+        <div className=" grid grid-cols-1 lg:grid-cols-5 bg-white">
+          <div className=" hidden lg:block">
             <AllCategory />
           </div>
-          <div className=" col-span-3">
+          <div className=" lg:col-span-3">
             <CarouselCard />
           </div>
-          <div className="">
+          <div className=" block lg:hidden">
+            <AllCategory />
+          </div>
+          <div className=" hidden lg:block">
             <P2card />
           </div>
         </div>
         {/* photo */ }
         <P5photoCard />
         {/* Hot */ }
-        <div className=" my-20 bg-white">
+        <div className=" my-20 hidden lg:block  bg-white">
           <h1 className=' text-red-600 text-[30px] px-10 py-6 border border-b-red-600'>HOT</h1>
           <HotCard />
         </div>

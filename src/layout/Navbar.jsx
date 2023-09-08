@@ -7,11 +7,11 @@ const Navbar = () => {
 
     return (
         <div className=' z-[999] bg-white w-full shadow-xl'>
-            <div className=" bg-white grid grid-cols-2 justify-center items-center">
+            <div className=" bg-white grid grid-cols-3 lg:grid-cols-2 justify-center items-center">
                 {/* logo */ }
                 <div className=" lg:mx-10">
                     <Link to={ '/' }>
-                        <svg width="200" height="180" viewBox="0 0 333 192" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg className=' w-[100px] lg:w-[200px] h-[90px] lg:h-[180px]' viewBox="0 0 333 192" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M122 99.8039C143.406 93.3657 159 73.5039 159 50C159 26.4961 143.406 6.63437 122 0.196167V99.8039Z" fill="url(#paint0_linear_3_50)" />
                             <path d="M153.089 0H160C186.448 0 208.1 20.5347 209.881 46.5303C207.632 46.84 205.335 47 203 47C176.393 47 154.64 26.2175 153.089 0Z" fill="url(#paint1_linear_3_50)" />
                             <path d="M209.881 53.4697C208.1 79.4653 186.448 100 160 100H153.089C154.64 73.7825 176.393 53 203 53C205.335 53 207.632 53.16 209.881 53.4697Z" fill="url(#paint2_linear_3_50)" />
@@ -34,23 +34,23 @@ const Navbar = () => {
                     </Link>
                 </div>
                 {/* search and cart */ }
-                <div className=" flex gap-10 items-center justify-center">
+                <div className=" col-span-2 lg:col-span-1 flex gap-4 lg:gap-10 items-center justify-center">
                     <form className=' w-2/3'>
                         <label for="default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
                         <div class="relative flex justify-center items-center border-2 border-[#209F64]">
                             <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
-                                <svg class="w-10 h-10 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                                <svg class="lg:w-10 w-6 h-6 lg:h-10 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
                                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
                                 </svg>
                             </div>
-                            <input type="search" id="default-search" class="block w-full p-5 pl-20 text-[20px] text-black bg-gray-50 " placeholder="What are you looking for?" required />
-                            <button type="submit" class="text-white absolute right-0 bg-[#209F64] hover:bg-[#28BB77] focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium text-[25px] px-10 py-3 h-full dark:focus:ring-blue-800">Search</button>
+                            <input type="search" id="default-search" class="block w-full p-3 lg:p-5 pl-10 lg:pl-20 text-[10px] lg:text-[20px] text-black bg-gray-50 " placeholder="What are you looking for?" required />
+                            <button type="submit" class=" hidden lg:block text-white absolute right-0 bg-[#209F64] hover:bg-[#28BB77] focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium text-[25px] px-10 py-3 h-full dark:focus:ring-blue-800">Search</button>
                         </div>
                     </form>
                     <div className="">
-                        <button className=' flex items-center gap-6 text-[23px] px-6 py-3 bg-stone-200'>
+                        <button className=' flex items-center gap-2 lg:gap-6 text-[23px] lg:px-6 px-3 lg:py-3 py-1 bg-stone-200'>
                             <SlHandbag className=' text-red-700' />
-                            <span className=' text-black'>My Cart</span>
+                            <span className=' hidden lg:block text-black'>My Cart</span>
                             <span className=' text-red-700'> ({cart})</span>
                         </button>
                     </div>

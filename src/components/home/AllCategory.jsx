@@ -29,11 +29,11 @@ const AllCategory = () => {
     ]
   return (
     <div>
-        <ul className=' flex flex-col gap-5'>
+        <ul className=' my-5 flex flex-wrap lg:flex-col gap-4 lg:gap-5'>
             {data.map((card,index) => (
-                <li key={index} className=' flex flex-col px-4 py-2 hover:border cursor-pointer hover:border-green-500 transition-all duration-100'>
-                    <h1 className=' text-[25px] text-black'>{card.name}</h1>
-                    <p className=' text-[15px] text-stone-600'>{card.description}</p>
+                <li key={index} className=' flex flex-col px-4 py-2 text-center hover:border cursor-pointer hover:border-green-500 transition-all duration-100 border lg:border-none border-black'>
+                    <h1 className=' text-[10px] lg:text-[25px] text-black'>{card.name}</h1>
+                    <p className=' hidden lg:block text-[8px] lg:text-[15px] text-stone-600'>{card.description}</p>
                 </li>
             ))}
         </ul>

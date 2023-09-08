@@ -4,7 +4,7 @@ const HomeNav = () =>
 {
     return (
         <div>
-            <div className="navbar bg-[#28BB77] text-white">
+            <div className="navbar bg-[#28BB77] text-white hidden lg:flex">
                 <div className="navbar-start">
                     <a className=" text-[30px]">All Product categories</a>
                 </div>

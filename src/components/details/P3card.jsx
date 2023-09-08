@@ -1,13 +1,13 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-const P2card = () =>
+const P3card = () =>
 {
     const data = [
         {
             name: 'Panther time-lapse spray four generations',
             price: '¥ 499',
-            photo: 'https://www.ftxk.cn/Uploads/Picture/single/0/2020/04/13/5e93d1ef59f07.jpg'
+            photo: 'https://www.ftxk.cn/Uploads/Picture/single/2/2019/09/05/5d7066e74c6db.jpg'
         },
         {
             name: 'Drpapa time-lapse spray',
@@ -34,4 +34,4 @@ const P2card = () =>
     )
 }
 
-export default P2card
+export default P3card
