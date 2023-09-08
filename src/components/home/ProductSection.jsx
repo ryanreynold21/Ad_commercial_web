@@ -45,8 +45,9 @@ const ProductSection = () =>
             <div className=" grid grid-cols-5 gap-5">
                 {/* Hot Selling */ }
                 <div className=" my-10 flex flex-col gap-10">
-                    <div className=" p-2 text-center text-green-800 text-[20px] border border-dashed border-green-800">
-                        <span>Hot Selling Leaderboard</span>
+                    <div className="relative overflow-hidden p-2 text-center z-[3] text-green-800 text-[20px] border border-dashed border-green-800">
+                        <span className='absolute top-0 left-0 rotate-[-50deg] translate-y-2 -translate-x-5 bg-red-600 text-white w-[100px]'>hot</span>
+                        <span className="relative">Hot Selling Leaderboard</span>
                     </div>
                     <ul className=' flex flex-col gap-10'>
                         { data.map( ( card, index ) => (

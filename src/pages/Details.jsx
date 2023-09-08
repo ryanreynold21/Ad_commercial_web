@@ -3,6 +3,7 @@ import Rootlayout from '../layout/Rootlayout'
 import DetailsPhoto from '../components/details/DetailsPhoto'
 import { BiDownArrowAlt, BiUpArrowAlt } from 'react-icons/bi'
 import P3card from '../components/details/P3card'
+import { Link } from 'react-router-dom'
 
 const Details = () =>
 {
@@ -25,13 +26,15 @@ const Details = () =>
                 <span className=' text-[20px] font-[600] text-black'>Member Price</span>
                 <h1 className=' text-[40px] text-red-700 font-[600]'>¥499</h1>
               </div>
+              <Link to={'/'}>
               <button className=' px-4 py-2 text-green-700 font-[600] text-[25px]'>View All Product</button>
+              </Link>
               {/* cart */ }
               <div className=" flex gap-10">
                 <h1 className=' text-[40px] text-black font-[500]'>{ qty }</h1>
                 <div className=" flex flex-col gap-2">
-                  <BiUpArrowAlt className=' text-[30px] cursor-pointer border border-black' />
-                  <BiDownArrowAlt className=' text-[30px] cursor-pointer border border-black' />
+                  <BiUpArrowAlt onClick={() => setQty(qty + 1)} className=' text-[30px] cursor-pointer border border-black' />
+                  <BiDownArrowAlt onClick={() => qty > 1 && setQty(qty - 1)} className={`text-[30px] cursor-pointer border border-black ${qty < 1 ? 'disabled' : ''}`} />
                 </div>
                 <button className=' text-2xl px-6 py-2 bg-red-600 text-white'>Add to Cart</button>
                 <button className=' text-2xl px-6 py-2 bg-blue-600 text-white'>Buy Now</button>

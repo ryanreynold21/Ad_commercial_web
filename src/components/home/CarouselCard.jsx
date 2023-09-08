@@ -8,17 +8,17 @@ const CarouselCard = () =>
       <div className=" relative flex justify-center items-center">
         <div className="carousel w-full">
           <div id="item1" className="carousel-item w-full">
-            <Link to={ '/details' }>
+            <Link to={ '/details5' }>
               <img src="https://images.pexels.com/photos/6347545/pexels-photo-6347545.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" className="  w-full h-[250px] md:h-[500px] lg:h-[700px] object-cover object-center" />
             </Link>
           </div>
           <div id="item2" className="carousel-item w-full">
-            <Link to={ '/details' }>
+            <Link to={ '/details5' }>
               <img src="https://images.pexels.com/photos/167703/pexels-photo-167703.jpeg?auto=compress&cs=tinysrgb&w=600" className="  w-full h-[250px] md:h-[500px] lg:h-[700px] object-center object-cover" />
             </Link>
           </div>
           <div id="item3" className="carousel-item w-full">
-            <Link to={ '/details' }>
+            <Link to={ '/details5' }>
               <img src="https://images.pexels.com/photos/4246120/pexels-photo-4246120.jpeg?auto=compress&cs=tinysrgb&w=600" className="  w-full h-[250px] md:h-[500px] lg:h-[700px] object-center object-cover" />
             </Link>
           </div>
