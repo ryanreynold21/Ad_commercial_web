@@ -4,7 +4,7 @@ import HomeNav from '../components/home/HomeNav'
 import CarouselCard from '../components/home/CarouselCard'
 import P2card from '../components/home/P2card'
 import AllCategory from '../components/home/AllCategory'
-import P5photoCard from '../components/home/p5photoCard'
+import P5photoCard from '../components/home/P5photoCard'
 import HotCard from '../components/home/HotCard'
 import ProductSection from '../components/home/ProductSection'
 
